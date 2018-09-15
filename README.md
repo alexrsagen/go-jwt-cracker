@@ -7,7 +7,7 @@ It should be slightly faster than it's inspiration, as it uses a new goroutine f
 
 Feel free to create a pull request with an improvement or fix :smile:
 
-# Usage
+## Usage
 ```
 Usage of go-jwt-cracker:
   -alphabet string
@@ -22,7 +22,7 @@ Usage of go-jwt-cracker:
         The full HS256 jwt token to crack
 ```
 
-# Example
+## Example
 Cracking a token generated with [jwt.io](https://jwt.io):
 
 ```bash
