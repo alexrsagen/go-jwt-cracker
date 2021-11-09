@@ -10,14 +10,16 @@ Feel free to create a pull request with an improvement or fix :smile:
 ## Usage
 ```
 Usage of go-jwt-cracker:
+   -alg string
+       HS256, HS384 or HS512 (default "HS256")
   -alphabet string
-        The alphabet to use for the brute force (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+       The alphabet to use for the brute force (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
   -maxlen int
-        The max length of the string generated during the brute force (default 12)
+       The max length of the string generated during the brute force (default 12)
   -prefix string
-        A string that is always prefixed to the secret
+       A string that is always prefixed to the secret
   -suffix string
-        A string that is always suffixed to the secret
+       A string that is always suffixed to the secret
   -token string
         The full HS256 jwt token to crack
 ```
