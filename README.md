@@ -1,7 +1,7 @@
-# go-jwt-cracker
-Concurrent HS256 JWT token brute force cracker, inspired by https://github.com/lmammino/jwt-cracker
+# JWT-Cracker
+HS256/384/512 JWT token brute force cracker.
 
-This is realistically only effective to crack JWT with weak secrets. It also only currently works with HMAC-SHA256 signatures.
+This is realistically only effective to crack JWT with weak secrets. It also only currently works with HMAC-SHA2 signatures.
 
 It should be slightly faster than it's inspiration, as it uses a new goroutine for each generated and compared hash. Could be made faster if it was generating secrets in more than one goroutine.
 
