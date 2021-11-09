@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2018 Alexander Sagen
+Copyright (c) 2018 Alexander Sagen,
 Copyright (c) 2021 Pedro Albanese
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
