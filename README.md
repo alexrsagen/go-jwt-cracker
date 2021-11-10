@@ -14,8 +14,6 @@ It should be slightly faster than it's inspiration, as it uses a new goroutine f
 ## Usage
 ```
 Usage of go-jwt-cracker:
-   -alg string
-       HS256, HS384 or HS512 (default "HS256")
   -alphabet string
        The alphabet to use for the brute force (default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
   -maxlen int
