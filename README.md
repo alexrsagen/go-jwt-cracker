@@ -11,8 +11,6 @@ This is realistically only effective to crack JWT with weak secrets. It also onl
 
 It should be slightly faster than it's inspiration, as it uses a new goroutine for each generated and compared hash. Could be made faster if it was generating secrets in more than one goroutine.
 
-Feel free to create a pull request with an improvement or fix :smile:
-
 ## Usage
 ```
 Usage of go-jwt-cracker:
