@@ -18,11 +18,10 @@ import (
 )
 
 var (
-	algorithm = flag.String("alg", "HS256", "HS256, HS384 or HS512")
-	token = flag.String("token", "", "The full HS256 jwt token to crack")
-	alphabet = flag.String("alphabet", "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", "The alphabet to use for the brute force")
-	prefix = flag.String("prefix", "", "A string that is always prefixed to the secret")
-	suffix = flag.String("suffix", "", "A string that is always suffixed to the secret")
+	token     = flag.String("token", "", "The full HS256 jwt token to crack")
+	alphabet  = flag.String("alphabet", "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", "The alphabet to use for the brute force")
+	prefix    = flag.String("prefix", "", "A string that is always prefixed to the secret")
+	suffix    = flag.String("suffix", "", "A string that is always suffixed to the secret")
 	maxLength = flag.Int("maxlen", 12, "The max length of the string generated during the brute force")
 )
 
@@ -138,11 +137,12 @@ func parseJWT(input string) (*jwt, error) {
 
 func generateSignature(message, secret []byte) []byte {
 	var hasher hash.Hash
-	if *algorithm == "HS256" {
+	parsed, _ := parseJWT(*token)
+	if strings.ToUpper(parsed.header.Algorithm) == "HS256" {
 		hasher = hmac.New(sha256.New, secret)
-	} else if *algorithm == "HS384" {
+	} else if strings.ToUpper(parsed.header.Algorithm) == "HS384" {
 		hasher = hmac.New(sha512.New384, secret)
-	} else if *algorithm == "HS512" {
+	} else if strings.ToUpper(parsed.header.Algorithm) == "HS512" {
 		hasher = hmac.New(sha512.New, secret)
 	}
 	hasher.Write(message)
