@@ -1,6 +1,7 @@
 # JWT-Cracker
 [![ISC License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pedroalbanese/jwt-cracker/blob/master/LICENSE.md) 
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/jwt-cracker?status.png)](http://godoc.org/github.com/pedroalbanese/jwt-cracker)
+[![GitHub downloads](https://img.shields.io/github/downloads/pedroalbanese/jwt-cracker/total.svg?logo=github&logoColor=white)](https://github.com/pedroalbanese/jwt-cracker/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/jwt-cracker)](https://goreportcard.com/report/github.com/pedroalbanese/jwt-cracker)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/pedroalbanese/jwt-cracker)](https://golang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/pedroalbanese/jwt-cracker)](https://github.com/pedroalbanese/jwt-cracker/releases)
